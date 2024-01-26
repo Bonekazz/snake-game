@@ -1,23 +1,23 @@
 class GameEngine {
     constructor() {
         if (GameEngine.instance) {
-            throw new Error("New instance cannot be created")
+            throw new Error('New instance cannot be created');
         }
         GameEngine.instance = this;
 
         this.window = null;
         this.dom = null;
-        this.board = null
+        this.board = null;
     }
 
     start() {
-        console.log("engine started");
+        console.log('engine started');
     }
 
     init() {
-        this.window.addEventListener("click", () => {
-            console.log("player clicked")
-        })
+        this.window.addEventListener('click', () => {
+            console.log('player clicked');
+        });
     }
 
     setConfig(config) {
